@@ -3,6 +3,8 @@
 	<head>
 	<title>Kevin Dang</title>
 	<meta name="Kevin" content="personal website">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type = "text/css">
     <link href="css/websitecss.css" rel="stylesheet" type ="text/css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -25,15 +27,15 @@
             </ol>
         </div>
     </nav>
-        <section id = "home" data-type="background" data-speed="10">
-            <img src="pp1.jpg" alt = "Responsive image" class="img-rounded" id = "pp">
+        <div id = "home" data-type="background" data-speed="10" class = "container-fluid" >
+            <div id = "pp"><img src="pp1.jpg" alt = "Responsive image" class="img-rounded"></div>
             <article>Hi, I'm Kevin a second year Mechatronics engineering student at McMaster University.
 			I've learned and worked with languages such as HTML, CSS, PHP, Java and Python.You can view my resume <a href = "Resume.pdf">here</a>
                 and if you
 			want to get in touch with me head over to <a href = "#contact">contacts</a>.</article>
-        </section>
+        </div>
         
-        <section id="contact" data-type="background" data-speed="10">
+        <div id="contact" data-type="background" data-speed="10">
         	<article>Find me here:
 				<div class = "contactlist">
 					<a class = "gmicon" href = "mailto:dangkevin12@gmail.com"><img src = "Gmail_logo.png"></img></a>
@@ -41,6 +43,6 @@
 					<a class = "ghicon" href = "https://github.com/k-dang"><img src="Octocat.png"></img></a>
 				</div>
 			</article>
-        </section>
+        </div>
     </body>
 </html>

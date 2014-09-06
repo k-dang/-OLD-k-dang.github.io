@@ -29,12 +29,10 @@ background: url( )
     margin-top: 40px;
     margin-right: 70px;
 }
-.container-fluid{
-padding: 0px!important
-}
+
 
 #home{
-    background: url(blackbg1.jpg) 50% 0 repeat fixed;min-height: 1000px;
+    background: url(blackbg1.jpg) 50% 0 repeat fixed;min-height: 1100px;
    	margin: 0 auto;
     width: 100%;
     max-width: 1920px;
@@ -43,17 +41,17 @@ padding: 0px!important
 }
 
 #home article{
-    height: 450px;
-	top: 150px;
-	width: 1000px;
-	margin-left: 200px;
+	width: 980px;
+	margin:0 auto;
 	font-size: 30px;
-	color: #D8D8D8;
+	color: #D8D8D8; 
+	text-align: center;
+	padding: 150px 0px 0px 0px;
 }
     
 
 #contact{
-	background: url(greybg2.jpg) 50% 0 repeat fixed;
+	background: url(greybg2.jpg) 50% 0 no-repeat;min-height: 1000px;
 	height: 1000px;
 	margin: 0 auto;
 	width: 100%;
@@ -63,26 +61,23 @@ padding: 0px!important
 }
 
 #contact article{
-	height: 450px;
-	padding: 350px;
-	margin-left: 150px;
+	text-align: center;
+	margin: 0 auto;
 	font-size: 50px;
-	top: 150px;
-	width: 100%;
+	padding: 200px 0px 0px 0px;
 }
 
 a{
 	color: #D8D8D8;
-	
 }
 
-
-
 #pp{
-	margin-top: 200px;
-	margin-left: 200px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 	width:140px; 
 	height:140px;
+	padding: 250px 0px 0px 10px;
 }
 
 .contactlist{
@@ -90,4 +85,14 @@ a{
     margin-top: 8px;
     margin-right: auto;
     margin-left: auto;
+}
+.gmicon{
+	padding: 20px;
+	
+}
+.liicon{
+	
+}
+.ghicon{
+	padding: 0px 0px 0px 20px;
 }
