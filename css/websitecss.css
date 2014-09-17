@@ -30,6 +30,13 @@ background: url( )
     margin-right: 70px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+}
+
+.breadcrumb a:hover{
+    color: #FFF;
+}
 
 #home{
     background: url(blackbg1.jpg) 50% 0 repeat fixed;min-height: 1100px;
@@ -47,6 +54,14 @@ background: url( )
 	color: #D8D8D8; 
 	text-align: center;
 	padding: 150px 0px 0px 0px;
+}
+
+#home a{
+    text-decoration: none;
+}
+
+#home a:hover{
+    color: #FFF;
 }
     
 
