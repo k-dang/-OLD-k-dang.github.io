@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
 #home {
 background: url( )
 }
@@ -38,6 +39,10 @@ background: url( )
     color: #FFF;
 }
 
+#res-but{
+    
+}
+
 #home{
     background: url(blackbg1.jpg) 50% 0 repeat fixed;min-height: 1100px;
    	margin: 0 auto;
@@ -53,7 +58,7 @@ background: url( )
 	font-size: 30px;
 	color: #D8D8D8; 
 	text-align: center;
-	padding: 150px 0px 0px 0px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 #home a{
@@ -66,21 +71,32 @@ background: url( )
     
 
 #contact{
-	background: url(greybg2.jpg) 50% 0 no-repeat;min-height: 1000px;
-	height: 1000px;
+	background: url(greybg3.jpg) 50% 0 no-repeat;
+    min-height: 700px;
+    width: 100%
 	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
 	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
-#contact article{
-	text-align: center;
-	margin: 0 auto;
-	font-size: 50px;
-	padding: 200px 0px 0px 0px;
+#contact h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    padding: 200px 0px 0px 0px;
+    font-family: 'Exo 2',sans-serif;
+
 }
+
+#social{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 a{
 	color: #D8D8D8;
@@ -90,24 +106,22 @@ a{
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-	width:140px; 
-	height:140px;
-	padding: 250px 0px 0px 10px;
+    text-align: center;
+    padding-top: 250px;
 }
 
-.contactlist{
-    
-    margin-top: 8px;
-    margin-right: auto;
-    margin-left: auto;
+#contact img{
+    position: relative;
+
 }
-.gmicon{
-	padding: 20px;
-	
+#contact ul{
+    list-style-type: none;
+    text-align: center;
 }
-.liicon{
-	
+
+#contact ul li{
+    display: inline;
+    list-style-type: none;
+
 }
-.ghicon{
-	padding: 0px 0px 0px 20px;
-}
+
