@@ -85,7 +85,11 @@ background: url( )
     font-size: 50px;
     padding: 200px 0px 0px 0px;
     font-family: 'Exo 2',sans-serif;
+}
 
+#contact img{
+    height: 120px;
+    width: 120px;
 }
 
 #social{
