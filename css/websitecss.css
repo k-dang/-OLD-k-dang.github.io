@@ -14,21 +14,18 @@ background: url( )
 #logo{
     color: #D8D8D8;
     font-size: 60px;
-    margin-left: 70px;
-    margin-top: 24px;
     letter-spacing: 2px;
     font-family: Oswald;
-    font-style: normal;
-    font-weight: 400;
-    
+    padding-left: 50px;
+
 }
 .breadcrumb {
-    color: #D8D8D8;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
     float: right;
     margin-top: 40px;
     margin-right: 70px;
+    background-color: transparent;!important;
 }
 
 .breadcrumb a{
@@ -44,7 +41,7 @@ background: url( )
 }
 
 #home{
-    background: url(blackbg1.jpg) 50% 0 repeat fixed;min-height: 1100px;
+    background: url(greybg3.jpg) 50% 0 repeat fixed;min-height: 1100px;
    	margin: 0 auto;
     width: 100%;
     max-width: 1920px;
@@ -52,8 +49,7 @@ background: url( )
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
-#home article{
-	width: 980px;
+#home .container{
 	margin:0 auto;
 	font-size: 30px;
 	color: #D8D8D8; 
@@ -71,7 +67,7 @@ background: url( )
     
 
 #contact{
-	background: url(greybg3.jpg) 50% 0 no-repeat;
+	background: url(blackbg1.jpg) 50% 0 no-repeat;
     min-height: 700px;
     width: 100%
 	margin: 0 auto;
@@ -90,6 +86,14 @@ background: url( )
 #contact img{
     height: 120px;
     width: 120px;
+}
+
+#contact a{
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color: #FFF;
 }
 
 #social{
@@ -114,9 +118,8 @@ a{
     padding-top: 250px;
 }
 
-#contact img{
-    position: relative;
-
+#contact h1{
+    color: #FFF;
 }
 #contact ul{
     list-style-type: none;
@@ -129,3 +132,6 @@ a{
 
 }
 
+#res-icon{
+    font-size: 120px;
+}

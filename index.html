@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="css/websitecss.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/script.js"></script>
+    <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
 
 </head>
 
@@ -20,7 +21,7 @@
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
             <div class="navbar-text">
-                <h3 id="logo">Kevin</h3> 
+                <h3 id="logo" class = "navbar-brand">Kevin</h3> 
             </div>
             <ol class="breadcrumb">
                 <li id="menu-home"><a href="#home">Home</a>
@@ -34,28 +35,32 @@
         <div id="pp">
             <img src="pp1.jpg" alt="Responsive image" class="img-rounded">
         </div>
-        <article>Hi, I'm Kevin a third year Mechatronics engineering student at McMaster University. I've learned and worked with languages such as HTML, CSS, PHP, Java and Python.View my <a id = "res-but" class ="btn btn-default btn-lg" href = "Resume.pdf">Resume</a>
-            and if you want to get in touch with me head over to <a href="#contact">contacts</a>.</article>
+        <div class = "container">Hi, I'm Kevin a third year Mechatronics engineering student at McMaster University. I've learned and worked with languages such as HTML, CSS, PHP, Java and Python.View my <a id = "res-but" class ="btn btn-default btn-lg" href = "Resume.pdf">Resume</a>
+            and if you want to get in touch with me head over to <a href="#contact">contacts</a>.</div>
     </div>
 
     <div id="contact" data-type="background" data-speed="10">
         <div class = "container">
-            <h1>Find me here</h1>
+            <h1>Find out about me</h1>
             <div class = "row" id = "social">
-                <div class = "col-lg-4">
+                <div class = "col-lg-3">
                 <br></br>
                 <a href = "mailto:dangkevin12@gmail.com">
                 <img src = "Communication-gmail-icon.png"></img></a>
                 </div>
-                <div class = "col-lg-4">
+                <div class = "col-lg-3">
                 <br></br>
                 <a href="https://github.com/k-dang/">
                 <img src = "GitHub-Mark-120px-plus.png"></img></a>
                 </div>
-                <div class = "col-lg-4">
+                <div class = "col-lg-3">
                 <br></br>
                 <a href ="https://www.linkedin.com/pub/kevin-dang/86/493/a5">
                 <img src = "LinkedIn-InBug-2CRev.png"></img></a>
+                </div>
+                <div class = "col-lg-3">
+                <br></br>
+                <a href = "Resume.pdf"><i class="fa fa-file-text-o fa-6" id = "res-icon"></i></a>
                 </div>
             </div>
             </div>
