@@ -5,78 +5,140 @@
     <title>Kevin Dang</title>
     <meta name="Kevin" content="personal website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="css/websitecss.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    
+    $('#home').parallax("50%", 0.1);
+    $('#projects').parallax("50%", 0.1);
+    $('#contact').parallax("50%", 0.1);
+
+    })
+    </script>
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-text">
-                <h3 id="logo" class = "navbar-brand">Kevin</h3> 
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Kevin</a>
             </div>
-            <ol class="breadcrumb">
-                <li id="menu-home"><a href="#home">Home</a>
-                </li>
-                <li id="menu-contact"><a href="#contact">Contact</a>
-                </li>
-            </ol>
+            <div class="navbar-collapse collapse" id="directory">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">About</a>
+                    </li>
+                    <li><a href="#projects">Projects</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <div id="home" data-type="background" data-speed="10" class="container-fluid">
         <div id="pp">
             <img src="pp1.jpg" alt="Responsive image" class="img-rounded">
         </div>
-        <div class = "container">Hi, I'm Kevin a third year Mechatronics engineering student at McMaster University. I've learned and worked with languages such as HTML, CSS, PHP, Java and Python. View my <a id = "res-but" class ="btn btn-default btn-lg" href = "Resume.pdf">Resume</a>
-        and if you want to get in touch with me, head over to <a href="#contact">contacts</a>.</div>
+        <h1>Kevin Dang</h1>
+        <div class="container">Hi, I'm Kevin a third year Mechatronics engineering student at McMaster University. Click to view my <a href="Resume.pdf">resume</a> and scroll down to find out more about the projects I've been involved in.
+        </div>
     </div>
 
-    <div id="contact" data-type="background" data-speed="10">
-        <div class = "container">
-            <h1>Find out about me</h1>
-            <div class = "row" id = "social">
-                <div class = "col-lg-3">
-                <br></br>
-                <a href = "mailto:dangkevin12@gmail.com">
-                <img src = "Communication-gmail-icon.png"></img></a>
+    <div id="projects" data-type="background" data-speed="10" class="container-fluid">
+        <div class="container">
+            <h1>Side Projects</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6" id="proj-pic">
+                        <div class="col-md-12">
+                            <img src="BuildingBridges.png" class="img-thumbnail">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="proj-pic">
+                        <div class = "col-md-12">
+                        <img src="StuddentHub.png" class="img-thumbnail">
+                    </div>
+                    </div>
                 </div>
-                <div class = "col-lg-3">
-                <br></br>
-                <a href="https://github.com/k-dang/">
-                <img src = "GitHub-Mark-120px-plus.png"></img></a>
-                </div>
-                <div class = "col-lg-3">
-                <br></br>
-                <a href ="https://www.linkedin.com/pub/kevin-dang/86/493/a5">
-                <img src = "LinkedIn-InBug-2CRev.png"></img></a>
-                </div>
-                <div class = "col-lg-3">
-                <br></br>
-                <a href = "Resume.pdf"><i class="fa fa-file-text-o fa-6" id = "res-icon"></i></a>
+                <div class = "col-md-12">
+                    <div class="col-md-6" id="proj-pic">
+                        <div class="col-md-12">
+                            <img src="Planner.png" class="img-thumbnail">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="proj-pic">
+                        <div class="col-md-12">
+                            <img src="Planner.png" class="img-thumbnail">
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
         </div>
     </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-55175523-1', 'auto');
-  ga('send', 'pageview');
+    <div id="contact" data-type="background" data-speed="10" class="container-fluid">
+        <div class="container">
+            <h1>Find out about me</h1>
+            <div class="row" id="social">
+                <div class="col-lg-3">
+                    <br></br>
+                    <a href="mailto:dangkevin12@gmail.com">
+                        <img src="Communication-gmail-icon.png"></img>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <br></br>
+                    <a href="https://github.com/k-dang/">
+                        <img src="GitHub-Mark-120px-plus.png"></img>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <br></br>
+                    <a href="https://www.linkedin.com/pub/kevin-dang/86/493/a5">
+                        <img src="LinkedIn-InBug-2CRev.png"></img>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <br></br>
+                    <a href="Resume.pdf"><i class="fa fa-file-text-o fa-6" id = "res-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/script.js"></script>
+  <!--   script for google analytics -->
+    <script>
+        //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        //   ga('create', 'UA-55175523-1', 'auto');
+        //   ga('send', 'pageview');
+    </script>
+<!--     script end -->
+
 </body>
 
 </html>
