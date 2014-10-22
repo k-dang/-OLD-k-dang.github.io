@@ -91,6 +91,9 @@ a:hover{
     margin-bottom: 60px;
 
 }
+#projects .img-thumbnail{
+    height: 300px !important;
+}
 #proj-pic{
     margin-top: 50px;
     max-width: 900px;

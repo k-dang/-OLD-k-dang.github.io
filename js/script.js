@@ -1,22 +1,3 @@
-
-$(document).ready(function(){
-	$window = $(window);
-                
-   $('section[data-type="background"]').each(function(){
-     var $bgobj = $(this); 
-                    
-      $(window).scroll(function() {
-							
-		var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-
-		var coords = '50% '+ yPos + 'px';
-
-		$bgobj.css({ backgroundPosition: coords });
-		
-	  }); 
-   });	
-}); 
-
 <!----- JQUERY FOR SLIDING NAVIGATION --->   
 $(document).ready(function() {
   $('a[href*=#]').each(function() {
@@ -32,7 +13,7 @@ $(document).ready(function() {
          $(this).click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           $('html, body').animate({scrollTop: targetOffset}, 1500);
            return false;
          });
       }
