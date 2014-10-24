@@ -20,8 +20,23 @@ a:hover{
         font-size: 3em;
     }
 
+    #home h1{
+        font-size: 50px;
+    }
+
     #home .container{
         width: 900px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px){
+
+    #home h1{
+        font-size: 40px;
+    }
+    #home .container{
+        font-size: 20px;
     }
 }
 
@@ -61,13 +76,10 @@ a:hover{
 #home h1{
     color: #ffffff;
     text-align: center;
-    font-size: 50px;
     font-family: 'Exo 2',sans-serif;
-    padding: 20px;
 }
 
 #home .container{
-	font-size: 30px;
 	color: #ffffff; 
 	text-align: center;
     font-family: 'Exo 2', sans-serif;

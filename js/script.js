@@ -13,7 +13,7 @@ $(document).ready(function() {
          $(this).click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1500);
+           $('html, body').animate({scrollTop: targetOffset}, 1200);
            return false;
          });
       }
