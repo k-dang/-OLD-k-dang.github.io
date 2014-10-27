@@ -88,6 +88,7 @@ a:hover{
     
 #projects{
     background:url('1812813.png') 50% 0 no-repeat fixed;
+    background-size: cover;
     margin: auto;
 }
 #projects h1{
