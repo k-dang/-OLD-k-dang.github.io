@@ -71,6 +71,7 @@ a:hover{
     background-color: #193441;
    	margin: 0 auto;
     width: 100%;
+    height: 100%;
 }
 
 #home h1{
@@ -88,8 +89,9 @@ a:hover{
     
 #projects{
     background:url('1812813.png') 50% 0 no-repeat fixed;
-    background-size: cover;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 #projects h1{
     text-align: center;
@@ -116,7 +118,8 @@ a:hover{
 #contact{
     /*background-color: #D1DBBD;*/
     background:url('footer_lodyas.png');
-    width: 100%
+    width: 100%;
+    height: 100%;
     
 }
 
