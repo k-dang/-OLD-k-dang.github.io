@@ -1,0 +1,44 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightslategrey;
+    font-family: 'Raleway', sans-serif;
+}
+
+#content{
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn{
+    font-size: 15px;
+    color: ghostwhite;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-color: ghostwhite;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px){
+    #content{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 350px){
+    .btn{
+        font-size: 11px;
+        padding: 2px 5px;
+    }
+}
+
+.btn:hover {
+    background-color: powderblue;
+}
