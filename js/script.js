@@ -1,5 +1,7 @@
 $("#about").click(function(){
+    $("#maintext p").remove();
     XMLReqTextFile("js/about.txt");
+    $("#maintext p").show('slow');
 });
 
 $("#contacts").click(function(){
@@ -23,7 +25,7 @@ function XMLReqTextFile(file){
         if(fileReq.readyState === 4){
             if(fileReq.status === 200 || rawFile.status == 0){
                 var paragraphText = fileReq.responseText;
-                alert(paragraphText);
+                $("#maintext").append("<p>"+paragraphText+"</p>");
             }
         }
     }
