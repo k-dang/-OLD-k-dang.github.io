@@ -13,7 +13,7 @@ body{
 #background{
     height: 100%;
     width: 100%;
-    background-color: #0091EA;
+    background-color: #34495e;
     z-index: 1;
     position: fixed;
     /*opacity: 40%;*/
@@ -39,6 +39,7 @@ body{
     padding: 20px;
     transform: translateY(-50%);
     top: 50%;
+    width: 100%;
 }
 
 #content h1{
@@ -50,6 +51,12 @@ body{
     padding-bottom: 10px;
 }
 
+#maintext p{
+    font-size: 13px;
+    margin-bottom: 0px;
+    display: none;
+}
+
 .btn{
     font-size: 15px;
     padding: 10px 30px;
@@ -58,6 +65,8 @@ body{
     vertical-align: middle;
     display: inline-block;
     margin: 0 0 2px 0;
+    color: white;
+    text-align: center;
 }
 
 .btn:hover,.btn:active,.btn:focus {
