@@ -8,7 +8,7 @@ $("#contacts").click(function(){
     $("#maintext p").remove();
     $("#maintext").append("<p>email : dangkevin12@gmail.com</p>");
     $("#maintext").append("<p>github : https://github.com/k-dang</p>");
-    $("#maintext").append("<p>linkedin : https://ca.linkedin.com/in/kdang1")
+    $("#maintext").append("<p>linkedin : https://ca.linkedin.com/in/kdang1</p>")
     $("#maintext p").show('slow');
 });
 
