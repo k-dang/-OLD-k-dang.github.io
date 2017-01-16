@@ -69,6 +69,11 @@ body{
     font-size: 15px;
 }
 
+#desc{
+    display: none;
+    font-size: 16px;
+}
+
 .btn{
     font-size: 15px;
     padding: 10px 30px;

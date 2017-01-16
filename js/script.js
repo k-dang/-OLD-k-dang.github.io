@@ -1,14 +1,14 @@
 $("#about").click(function(){
-    $("#maintext div").remove();
+    $("#maintext #desc").remove();
     XMLReqTextFile("js/about.txt");
-    $("#maintext div").show('slow');
+    $("#maintext #desc").show('slow');
 });
 
 $("#contacts").click(function(){
     $("#maintext #faicon").remove();
-    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("envelope")+"<div id=\"fatext\">dangkevin12@gmail.com</div></div>");
-    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("github")+"<div id=\"fatext\">https://github.com/k-dang</div></div>");
-    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("linkedin-square")+"<div id=\"fatext\">https://ca.linkedin.com/in/kdang1</div></div>");
+    $("#maintext").append(getFaLink("envelope","dangkevin12@gmail.com"));
+    $("#maintext").append(getFaLink("github","https://github.com/k-dang"));
+    $("#maintext").append(getFaLink("linkedin-square","https://ca.linkedin.com/in/kdang1"));
     $("#maintext #faicon").show('slow');
 });
 
@@ -25,7 +25,7 @@ function XMLReqTextFile(file){
         if(fileReq.readyState === 4){
             if(fileReq.status === 200 || rawFile.status == 0){
                 var paragraphText = fileReq.responseText;
-                $("#maintext").append("<div>"+paragraphText+"</div>");
+                $("#maintext").append("<div id=\"desc\">"+paragraphText+"</div>");
             }
         }
     }
@@ -33,9 +33,9 @@ function XMLReqTextFile(file){
 }
 
 function getFontAwesome(name){
-    return "<i class=\"fa fa-"+name+"\" aria-hidden=\"true\"></i>"
+    return "<i class=\"fa fa-"+name+"\" aria-hidden=\"true\"></i>";
 }
 
 function getFaLink(Icon, Text){
-
+    return "<div id=\"faicon\">"+getFontAwesome(Icon)+"<div id=\"fatext\">"+Text+"</div></div>";
 }
