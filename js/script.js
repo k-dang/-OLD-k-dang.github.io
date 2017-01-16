@@ -5,11 +5,11 @@ $("#about").click(function(){
 });
 
 $("#contacts").click(function(){
-    $("#maintext p").remove();
-    $("#maintext").append("<p>email : dangkevin12@gmail.com</p>");
-    $("#maintext").append("<p>github : https://github.com/k-dang</p>");
-    $("#maintext").append("<p>linkedin : https://ca.linkedin.com/in/kdang1</p>")
-    $("#maintext p").show('slow');
+    $("#maintext #faicon").remove();
+    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("envelope")+"<div id=\"fatext\">dangkevin12@gmail.com</div></div>");
+    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("github")+"<div id=\"fatext\">https://github.com/k-dang</div></div>");
+    $("#maintext").append("<div id=\"faicon\">"+getFontAwesome("linkedin-square")+"<div id=\"fatext\">https://ca.linkedin.com/in/kdang1</div></div>");
+    $("#maintext #faicon").show('slow');
 });
 
 $(window).resize(function(){
@@ -30,4 +30,12 @@ function XMLReqTextFile(file){
         }
     }
     fileReq.send(null);
+}
+
+function getFontAwesome(name){
+    return "<i class=\"fa fa-"+name+"\" aria-hidden=\"true\"></i>"
+}
+
+function getFaLink(Icon, Text){
+
 }

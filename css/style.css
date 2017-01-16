@@ -44,7 +44,8 @@ body{
 
 #content h1{
     margin-top: 0px;
-    font-size: 50px;
+    margin-bottom: 0px;
+    font-size: 60px;
 }
 
 #content p{
@@ -52,9 +53,20 @@ body{
 }
 
 #maintext p{
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 0px;
     display: none;
+    overflow: hidden;
+}
+
+#faicon{
+    display: none;
+}
+
+#fatext{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
 }
 
 .btn{
@@ -76,9 +88,13 @@ body{
     outline: none;
 }
 
+.fa{
+    margin-right: 10px;
+}
+
 @media (min-width: 650px){
     #content p{
-        width: 50%;
+        /*width: 50%;*/
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 10px;
