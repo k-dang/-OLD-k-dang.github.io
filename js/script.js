@@ -1,15 +1,15 @@
 $("#about").click(function(){
-    $("#maintext #desc").remove();
+    $("#maintext div").remove();
     XMLReqTextFile("js/about.txt");
-    $("#maintext #desc").show('slow');
+    $("#maintext div").show('slow');
 });
 
 $("#contacts").click(function(){
-    $("#maintext #faicon").remove();
+    $("#maintext div").remove();
     $("#maintext").append(getFaLink("envelope","dangkevin12@gmail.com"));
     $("#maintext").append(getFaLink("github","https://github.com/k-dang"));
     $("#maintext").append(getFaLink("linkedin-square","https://ca.linkedin.com/in/kdang1"));
-    $("#maintext #faicon").show('slow');
+    $("#maintext div").show('slow');
 });
 
 $(window).resize(function(){
