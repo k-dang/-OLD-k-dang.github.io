@@ -52,6 +52,10 @@ body{
     padding-bottom: 10px;
 }
 
+#maintext{
+    margin-bottom: 10px;
+}
+
 #maintext p{
     font-size: 16px;
     margin-bottom: 0px;
@@ -63,10 +67,11 @@ body{
     display: none;
 }
 
-#fatext{
+.fatext{
     display: inline-block;
     vertical-align: middle;
     font-size: 15px;
+    cursor: pointer;
 }
 
 #desc{
@@ -104,4 +109,8 @@ body{
         margin-right: auto;
         padding-bottom: 10px;
     }
+}
+
+.alert{
+    position: relative;
 }
