@@ -1,17 +1,16 @@
 $("#about").click(function(){
-    $("#maintext div").remove();
+    $("#maintext a").remove();
+    $("#maintext #desc").remove();
     XMLReqTextFile("js/about.txt");
-    $("#maintext div").show('slow');
+    $("#maintext #desc").show('slow');
 });
 
 $("#contacts").click(function(){
-    $("#maintext div").remove();
+    $("#maintext a").remove();
     $("#maintext").append(getFaLink("envelope","dangkevin12@gmail.com"));
     $("#maintext").append(getFaLink("github","https://github.com/k-dang"));
     $("#maintext").append(getFaLink("linkedin-square","https://ca.linkedin.com/in/kdang1"));
-    $("#maintext div").show('slow');
-    $('#faGitText').tooltip();
-    $('#faLinkText').tooltip();
+    $("#maintext").show('slow');
 });
 
 $(window).resize(function(){
@@ -35,7 +34,7 @@ function XMLReqTextFile(file){
 }
 
 function getFontAwesome(name){
-    return '<i class="fa fa-'+name+'" aria-hidden="true"></i>';
+    return '<i class="fa fa-3x fa-'+name+'" aria-hidden="true"></i>';
 }
 
 function getFaLink(Icon, Text){
@@ -43,49 +42,16 @@ function getFaLink(Icon, Text){
     switch(Icon){
         case 'envelope':
             id = 'faEnvText';
-            break;
+            return "<a id=\"faicon\" href=\"mailto:dangkevin12@gmail.com\">"+getFontAwesome(Icon)+"</div>";
         case 'github':
-            id = 'faGitText'
-            break;
+            id = 'faGitText';
+            return "<a id=\"faicon\" href=\""+Text+"\">"+getFontAwesome(Icon)+"</div>";
         case 'linkedin-square':
-            id = 'faLinkText'
-            break;
+            id = 'faLinkText';
+            return "<a id=\"faicon\" href=\""+Text+"\">"+getFontAwesome(Icon)+"</div>";
         default:
     }
-    return "<div id=\"faicon\">"+getFontAwesome(Icon)+"<div class=\"fatext\" id="+id+" title=\"Copied\">"+Text+"</div></div>";
 }
-
-var clipboard = new Clipboard('#faEnvText', {
-    text: function() {
-        var Text = $('#faEnvText').text();
-        return Text;
-    }
-});
-
-
-var clipboard2 = new Clipboard('#faGitText', {
-    text: function() {
-        var Text = $('#faGitText').text();
-        return Text;
-    }
-});
-
-var clipboard3 = new Clipboard('#faLinkText', {
-    text: function() {
-        var Text = $('#faLinkText').text();
-        return Text;
-    }
-});
-
-// function copyMe(Text,id) {
-clipboard.on('success',function(e){
-    var clicked = e.trigger.id;
-    console.log(clicked);
-    var anchor = $('#'+clicked);
-    anchor.attr('data-original-title','Copied');
-    anchor.tooltip('show');
-});
-// }
 
 
 
