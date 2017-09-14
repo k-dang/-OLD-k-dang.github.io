@@ -1,25 +1,15 @@
 html{
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
     font-family: 'Raleway', sans-serif;
-}
-
-#background{
-    height: 100%;
-    width: 100%;
-    /*background-image: url('../imgs/Maldives.jpg');*/
-    background: #B2FEFA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    z-index: 1;
-    position: fixed;
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    /* height: 100%;
+    width: 100%; */
     /*opacity: 40%;*/
     /*-webkit-filter: blur(3px);
     -moz-filter: blur(3px);
@@ -28,98 +18,67 @@ body{
     filter: blur(3px);*/
 }
 
-#container{
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    text-align: center;
+.row{
+
+}
+
+[class*="col-"]{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#icon-group{
+    color: white;
+    margin-top: 9%;
+}
+
+i {
+    font-size: 70px !important;
     position: relative;
+    vertical-align: bottom;
+}
+
+.fa{
+    margin-right: 20px;
+}
+
+.fa:hover{
+    color: #ccf5fd;
+}
+
+.fa-envelope{
+    font-size: 60px !important;
+    margin-right: 30px;
+    top:-4px;
+}
+
+.fa-file-text{
+    font-size: 50px !important;
+    top:-9px;
 }
 
 #content{
-    color: white;
+    /* color: white;
     font-size: 22px;
     position: absolute;
     padding: 20px;
     transform: translateY(-50%);
-    top: 50%;
-    width: 100%;
+    top: 30%;
+    width: 100%; */
 }
 
-#content h1{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 60px;
+
+#main-text{
+    /* margin-top: 20px;
+    text-align: left;
+    color: #696969;
+    background: white;
+    font-size: 20px; */
 }
 
-#content p{
-    padding-bottom: 10px;
-}
-
-#maintext{
-    margin-bottom: 10px;
-}
-
-#maintext p{
-    font-size: 16px;
-    margin-bottom: 0px;
-    display: none;
-    overflow: hidden;
-}
-
-#faicon{
-    color: white;
-    margin-right: 10px;
-}
-
-#faicon:hover{
-    color: #ccf5fd;
-}
-
-.fatext{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-#desc{
-    display: none;
-    font-size: 16px;
-}
-
-.btn{
-    font-size: 15px;
-    padding: 10px 30px;
-    background-color: transparent;
-    border-color: white;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0 0 2px 0;
-    color: white;
-    text-align: center;
-}
-
-.btn:hover,.btn:active,.btn:focus {
-    background-color: #ccf5fd;
-    border-color: white;
-    color: white;
-    outline: none;
-}
-
-.fa{
-    margin-right: 10px;
-}
-
-@media (min-width: 650px){
-    #content p{
-        /*width: 50%;*/
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10px;
+@media (max-width: 650px){
+    .fa{
+        margin-right: 20px;
+        font-size: 30px !important;
     }
-}
-
-.alert{
-    position: relative;
 }
