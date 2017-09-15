@@ -28,7 +28,7 @@ $(".fa-envelope").click(function(){
 });
 
 $(".fa-file-text").click(function(){
-    console.log("resume");
+    
 });
 
 function getNameOfOthers(iconName){
