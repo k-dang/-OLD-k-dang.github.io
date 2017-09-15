@@ -23,14 +23,11 @@ body{
 }
 
 [class*="col-"]{
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
     padding: 15px;
 }
 
 #icon-group{
     color: #C7DFFF;
-    /* color: #F3F3F3; */
     margin-top: 9%;
 }
 
@@ -78,7 +75,6 @@ body{
 #profile{
     width: 200px;
     height: 200px;
-    
 }
 
 .text-muted{
@@ -110,30 +106,31 @@ body{
     margin-bottom: 0px !important;
     padding-left: 25px;
     line-height: 0.8 !important;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #contact .list-group{
-    padding: 20px;
-    font-size: 20px !important;
+    padding: 25px;
+    font-size: 18px !important;
     margin-bottom: 0px;
 }
 
 #contact i{
-    font-size: 50px !important;
+    font-size: 70px !important;
     cursor: pointer;
 }
 
-#contact .fa:hover{
-    color: black
+#contact .list-group .fa:hover{
+    /* color: #4B4B4B; */
+    color: black;
 }
 
-#main-text{
-    /* margin-top: 20px;
-    text-align: left;
-    color: #696969;
-    background: white;
-    font-size: 20px; */
+#contact .list-group a{
+    color: #535353;
+}
+
+#contact .list-group a:hover{
+    text-decoration: none;
 }
 
 .hold-well{

@@ -31,6 +31,11 @@ $(".fa-file-text").click(function(){
     
 });
 
+$(".list-group .fa-envelope-o").click(function(){
+    console.log("email");
+});
+
+
 function getNameOfOthers(iconName){
     var result;
     switch(iconName){
@@ -47,3 +52,18 @@ function getNameOfOthers(iconName){
     return result;
 }
 
+function loadText(){
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET","https://api.github.com/users/k-dang",true);
+    xhr.onload = function(){
+        if(this.status == 200){
+            var req = JSON.parse(this.responseText);
+            var gitAvatar = req["avatar_url"];
+            $("#profile").attr("src",gitAvatar);
+            // console.log(this.responseText);
+        }
+    }
+    xhr.send();
+}
+
+loadText();
