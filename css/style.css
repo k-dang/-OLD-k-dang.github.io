@@ -16,7 +16,7 @@ body{
 }
 
 .nav-pills {
-    margin: 10px;
+    margin: 15% 10px 10px;
 }
 
 .nav-pills a {
@@ -53,12 +53,16 @@ body{
 
 #content h1{
     font-size: 50px;
+    margin-bottom: 20px
 }
 
 #content .text-secondary {
-    font-size: 18px;
-    margin-left: 5px;
-    opacity: 0.5;
+    font-size: 16px;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
 }
 
 #contact {
