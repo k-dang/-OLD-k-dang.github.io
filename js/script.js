@@ -1,56 +1,24 @@
-$(window).resize(function(){
-    if($(window).width() <= 600){
-        console.log($(window).width());
-    }
+$(".nav-pills .nav-item .nav-link").each(function(){
+    $(this).click(function(){
+        $(".nav-pills .nav-item .nav-link").each(function(){
+            $(this).removeClass("active");
+        });
+        $(this).addClass("active");
+    });
 });
 
-$("#icon-group .fa").click(function(){
-    var className = $(this).attr("class");
-    var currentActive = className.split(" ");
-    var removeList = getNameOfOthers(currentActive[1]);
-    for(i=0;i<removeList.length;i++){
-        $(`.${removeList[i]}`).removeClass("active");
-    }
-    $(this).addClass("active")
-})
-
-$(".fa-home").click(function(){
+$(".about").click(function(){
     $("#contact").fadeOut(300,function(){
         $("#about").fadeIn(800);
     })
 });
 
-$(".fa-envelope").click(function(){
+$(".contact").click(function(){
     $("#about").fadeOut(300,function(){
         $("#contact").fadeIn(800);
     });
     
 });
-
-$(".fa-file-text").click(function(){
-    
-});
-
-$(".list-group .fa-envelope-o").click(function(){
-    console.log("email");
-});
-
-
-function getNameOfOthers(iconName){
-    var result;
-    switch(iconName){
-        case "fa-envelope":
-            result = ["fa-home","fa-file-text"]
-            break;
-        case "fa-home":
-            result = ["fa-envelope","fa-file-text"];
-            break;
-        case "fa-file-text":
-            result = ["fa-home","fa-envelope"];
-            break;
-    }
-    return result;
-}
 
 function loadText(){
     var xhr = new XMLHttpRequest();
@@ -66,4 +34,4 @@ function loadText(){
     xhr.send();
 }
 
-loadText();
+// loadText();

@@ -1,6 +1,6 @@
 html{
-    /* height: 100%;
-    width: 100%; */
+    height: 100%;
+    width: 100%;
 }
 
 body{
@@ -8,138 +8,72 @@ body{
     background: #56CCF2;
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
     background: linear-gradient(to right, #2F80ED, #56CCF2);
-    /* height: 100%;
-    width: 100%; */
-    /*opacity: 40%;*/
-    /*-webkit-filter: blur(3px);
+    /* -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
-    filter: blur(3px);*/
+    filter: blur(3px); */
 }
 
-.row{
-
+.nav-pills {
+    margin: 10px;
 }
 
-[class*="col-"]{
-    padding: 15px;
-}
-
-#icon-group{
+.nav-pills a {
     color: #C7DFFF;
-    margin-top: 9%;
 }
 
-#icon-group i{
-    font-size: 70px !important;
-    position: relative;
-    vertical-align: bottom;
+.nav-pills a:hover {
+    text-decoration: none !important;
+}
+
+.nav-pills .nav-link {
+    color: #FFFFFF;
     cursor: pointer;
 }
 
-.fa{
-    margin-right: 20px;
+.nav-pills .nav-link:hover {
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
-.fa:hover{
-    color: white;
+.nav-pills .nav-link.active {
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
-.active{
-    opacity: 1 !important;
-    color: white;
+#content {
+    background-color: white;
+    border-radius: 10px;
 }
 
-.fa-home{
-    opacity: 0.7;
+#content .section {
+    padding: 20px
 }
 
-#icon-group .fa-envelope{
-    opacity: 0.7;
-    font-size: 60px !important;
-    margin-right: 30px;
-    top:-4px;
+#content h1{
+    font-size: 50px;
 }
 
-#icon-group .fa-file-text{
-    opacity: 0.7;
-    font-size: 50px !important;
-    top:-9px;
-}
-
-#icon-group a{
-    color: #C7DFFF;
-}
-
-#profile{
-    width: 200px;
-    height: 200px;
-}
-
-.text-muted{
+#content .text-secondary {
     font-size: 18px;
     margin-left: 5px;
     opacity: 0.5;
 }
 
-#content{
-    background-color: white;
-    border-radius: 10px;
-}
-
-#content .row{
-    margin-left: 0px !important;
-}
-
-#content h1{
-    font-size: 60px;
-    margin-left: 0px !important;
-}
-
-#contact{
+#contact {
     display: none;
 }
 
-#contact p{
-    font-size: 60px;
-    margin-bottom: 0px !important;
-    padding-left: 25px;
-    line-height: 0.8 !important;
-    margin-top: 15px;
+#contact a {
+    color: #777777;
 }
 
-#contact .list-group{
-    padding: 25px;
-    font-size: 18px !important;
-    margin-bottom: 0px;
-}
-
-#contact i{
-    font-size: 70px !important;
-    cursor: pointer;
-}
-
-#contact .list-group .fa:hover{
-    /* color: #4B4B4B; */
-    color: black;
-}
-
-#contact .list-group a{
-    color: #535353;
-}
-
-#contact .list-group a:hover{
+#contact a:hover {
     text-decoration: none;
+    color: #000000;
 }
 
-.hold-well{
-    padding: 0 20px 0 20px;
-}
+@media (max-width: 576px){
 
-@media (max-width: 650px){
-    .fa{
-        margin-right: 20px;
-        font-size: 30px !important;
-    }
 }
