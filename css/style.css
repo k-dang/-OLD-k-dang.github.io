@@ -16,7 +16,7 @@ body{
 }
 
 .nav-pills {
-    margin: 10% 10px 10px;
+    margin: 5% 10px 10px;
 }
 
 .nav-pills a {
@@ -65,15 +65,11 @@ body{
     height: 200px;
 }
 
-#contact {
-    display: none;
-}
-
-#contact a {
+#about a {
     color: #777777;
 }
 
-#contact a:hover {
+#about a:hover {
     text-decoration: none;
     color: #000000;
 }
