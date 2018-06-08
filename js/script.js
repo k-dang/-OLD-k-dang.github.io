@@ -5,23 +5,23 @@ $(function() {
                 $(this).removeClass("active");
             });
             $(this).addClass("active");
-        });
-    });
-
-    $(".about").click(function(){
-        $("#contact").fadeOut(300,function(){
-            $("#about").fadeIn(800);
-        })
-    });
-
-    $(".contact").click(function(){
-        $("#about").fadeOut(300,function(){
-            $("#contact").fadeIn(800);
+            toggleContent($(this).data("pill"));
         });
     });
 
     loadText();
 });
+
+function toggleContent(id){
+    $(".section").each(function(){
+        if ($(this).css('display') === "block"){
+            $(this).fadeOut(300, function(){
+                $("#"+id).fadeIn(800);
+            });
+            return false; 
+        }
+    });
+}
 
 function loadText(){
     var xhr = new XMLHttpRequest();

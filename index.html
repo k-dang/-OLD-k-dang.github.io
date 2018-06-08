@@ -17,7 +17,10 @@
 				<div class="offset-sm-1 col-sm-10">
 					<ul class="nav nav-pills">
 						<li class="nav-item">
-							<span class="nav-link about active">About Me</span>
+							<span class="nav-link about active" data-pill="about">About Me</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link" data-pill="empty">Empty</span>
 						</li>
 						<li class="nav-item">
 							<a href="Resume.pdf">
@@ -33,25 +36,25 @@
 				<div id="content" class="offset-sm-1 col-sm-10">
 					<div class="section" id="about">
 						<div class="row">
-							<div class="col-sm-auto">
+							<div class="col-md-auto">
 								<img class="img-thumbnail" id="profile" alt="Profile"></img>
 							</div>
-							<div class="col row text-center align-items-end">
-								<div class="col-2 align-self-end">
+							<div class="icons col row text-center align-items-end justify-content-end">
+								<div class="col-2-md">
 									<a href="mailto:dangkevin12@gmail.com">
 										<span class="fa-2x">
 											<i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
 										</span>
 									</a>
 								</div>
-								<div class="col-2">
+								<div class="col-2-md">
 									<a href="http://github.com/k-dang">
 										<span class="fa-2x">
 											<i class="fa fa-github-alt fa-fw" aria-hidden="true"></i>
 										</span>
 									</a>
 								</div>
-								<div class="col-2">
+								<div class="col-2-md">
 									<a href="https://www.linkedin.com/in/kdang1/">
 										<span class="fa-2x">
 											<i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i>
@@ -60,7 +63,10 @@
 								</div>
 							</div>
 						</div>
-						<h1>Kevin Dang <span class="text-secondary">Software Developer</span></h1>
+						<header>
+							<h1>Kevin Dang</h1>
+							<span class="text-secondary">Software Developer</span>
+						</header>
 						<h2>Work Experience</h2>
 						<hr>
 						<h4>Kanetix</h4>
@@ -79,6 +85,9 @@
 							<li>Solved tickets and rolled out patches that resulted in decreased number of returning customer issues from the same customers</li>
 							<li>Developed test automation infrastructure leading to a smoother transition towards the continuous integration model with 20% increase in development speed</li>
 						</ul>
+					</div>
+					<div class="section" id="empty">
+						<h1>Placeholder</h1>
 					</div>
 				</div>
 			</div>
