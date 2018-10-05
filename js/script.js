@@ -9,7 +9,7 @@ $(function() {
         });
     });
 
-    loadText();
+    getProfile();
 });
 
 function toggleContent(id){
@@ -23,16 +23,52 @@ function toggleContent(id){
     });
 }
 
-function loadText(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET","https://api.github.com/users/k-dang",true);
-    xhr.onload = function(){
-        if(this.status == 200){
-            var req = JSON.parse(this.responseText);
-            var gitAvatar = req["avatar_url"];
-            $("#profile").attr("src", gitAvatar);
-            // console.log(this.responseText);
-        }
-    }
-    xhr.send();
+function getProfile(){
+    fetch('https://api.github.com/users/k-dang')
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        var gitAvatar = data['avatar_url'];
+        $("#profile").attr("src", gitAvatar);
+    });
 }
+
+function getRepos(){
+    fetch('https://api.github.com/users/k-dang/repos')
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        for (i = 0; i<data.length; i++) {
+            $('.list-group').append(
+                '<li class="list-group-item"><a href='+
+                data[i]['html_url']
+                +'>'+
+                data[i]['name']+' - '+
+                data[i]['language']+
+                '</a></li>'
+            );
+        }
+    });
+}
+
+let searchBar = $('#searchBar');
+
+searchBar.keyup(function(){
+    let filterValue = searchBar.val().toLowerCase();
+
+    $('li.list-group-item').each(function(){
+        let atext = $(this).find('a').text();
+        lang = atext.split(' - ');
+
+        if(lang[1].toLowerCase().indexOf(filterValue) > -1){
+            $(this).css('display', '');
+        } else {
+            $(this).css('display', 'none');
+        }
+    });
+})
+$(window).on('load', function() {
+    getRepos();
+});
